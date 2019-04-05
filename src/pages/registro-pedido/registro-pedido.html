@@ -6,13 +6,38 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>registro_pedido</ion-title>
+  <ion-navbar color="primary">
+    <ion-title>Registro de Pedidos</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content center text-center>
+    <h1>Registro de Pedidos</h1>
+    <h2>Introduzca los datos del pedido</h2>
+    <ion-list>
+        <ion-item>
+          <ion-label>Productos</ion-label>
+          <ion-select [(ngModel)]="Pedido" multiple="true" cancelText="Cancelar" okText="Ok">
+            <ion-option value="Jugo Energia" selected="true">Jugo Energia</ion-option>
+            <ion-option value="Jugo Verde Total">Jugo Verde Total</ion-option>
+            <ion-option value="Jugo Cereza">Jugo Cereza</ion-option>
+            <ion-option value="Sandwich pan pepin" selected="true">Sandwitch pan pepin</ion-option>
+            <ion-option value="Sandwich pan de leña">Sandwich pan de leña</ion-option>
+            <ion-option value="Tostada completa">Tostada completa</ion-option>
+            <ion-option value="Batida de Guineo">Batida de Guineo</ion-option>
+            <ion-option value="Batida de Lechosa">Batida de Lechosa</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+    <ion-item>
+          <ion-label floating>Direccion Entrega</ion-label>
+          <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label color="primary">Total</ion-label>
+        <ion-input disabled type="number" value="120.00"></ion-input>
+  </ion-item>
+    <button ion-button full>Registrar Pedido</button>
 </ion-content>

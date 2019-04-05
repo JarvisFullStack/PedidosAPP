@@ -9,13 +9,15 @@ import { HomePage } from '../pages/home/home';
 
 //Paginas
 import {RegistroClientePage, RegistroNegocioPage, RegistroPedidoPage, RegistroProductoPage, 
-ListadoClientesPage, ListadoNegociosPage, ListadoPedidosPage, ListadoProductosPage} from '../pages/index.pages';
+ListadoClientesPage, ListadoNegociosPage, ListadoPedidosPage, ListadoProductosPage, SeleccionInicioPage, 
+LoginPage} from '../pages/index.pages';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage, RegistroClientePage, RegistroNegocioPage, RegistroPedidoPage, RegistroProductoPage, 
-    ListadoClientesPage, ListadoNegociosPage, ListadoPedidosPage, ListadoProductosPage
+    ListadoClientesPage, ListadoNegociosPage, ListadoPedidosPage, ListadoProductosPage, SeleccionInicioPage, 
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ ListadoClientesPage, ListadoNegociosPage, ListadoPedidosPage, ListadoProductosPa
   entryComponents: [
     MyApp,
     HomePage, RegistroClientePage, RegistroNegocioPage, RegistroPedidoPage, RegistroProductoPage, 
-    ListadoClientesPage, ListadoNegociosPage, ListadoPedidosPage, ListadoProductosPage
+    ListadoClientesPage, ListadoNegociosPage, ListadoPedidosPage, ListadoProductosPage, SeleccionInicioPage, 
+    LoginPage
   ],
   providers: [
     StatusBar,

@@ -6,13 +6,31 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>registro_producto</ion-title>
+  <ion-navbar color="primary"> 
+    <ion-title>Registro Producto</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content center text-center>
+    <h1>Registro de Producto</h1>
+    <h2>Introduzca los datos del cliente</h2>
+    <ion-item>
+        <ion-label floating># Producto</ion-label>
+        <ion-input type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>Nombre</ion-label>
+        <ion-input type="text"></ion-input>
+  </ion-item>
+    <ion-item>
+          <ion-label floating>Precio de Unidad</ion-label>
+          <ion-input type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+          <ion-label floating>Stock</ion-label>
+          <ion-input type="number"></ion-input>
+    </ion-item>
+    <button ion-button full>Registrar Producto</button>
 </ion-content>

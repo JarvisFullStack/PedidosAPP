@@ -1,0 +1,32 @@
+<!--
+  Generated template for the SeleccionInicioPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>INICIAR COMO...</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content center text-center>
+  <ion-list>
+    <button ion-item (click)="seleccion_inicio('empresa')">
+      <ion-thumbnail item-start>
+          <img src="https://escuela-emprendedores.alegra.com/wp-content/uploads/2018/07/tipos-de-empresa-1.jpg">
+      </ion-thumbnail>
+      <h2>Empresa</h2>
+    </button>
+    <button ion-item (click)="seleccion_inicio('cliente')">
+        <ion-thumbnail item-start>
+            <img src="https://pngimage.net/wp-content/uploads/2018/05/atencion-al-cliente-icono-png-8.png">
+        </ion-thumbnail>
+        <h2>Cliente</h2>
+    </button>
+  </ion-list>
+
+</ion-content>

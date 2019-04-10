@@ -1,6 +1,8 @@
 export class Cliente {
-    Nombre: string;
+    Id_Cliente: String;
+    Nombre: String;
     Apellido: String;
     Direccion: String;
     Balance: String;
+    Email: String;
 }

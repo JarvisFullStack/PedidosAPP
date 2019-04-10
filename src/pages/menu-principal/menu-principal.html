@@ -1,0 +1,43 @@
+<ion-menu [content]="content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <button ion-item *ngIf="tipo == 'empresa'">
+          <ion-icon name="restaurant"></ion-icon>
+          Productos
+        </button>
+        <button ion-item *ngIf="tipo == 'cliente'">
+          <ion-icon name="cart"></ion-icon>
+          Solicitar Pedido
+        </button>
+        <button ion-item *ngIf="tipo == 'cliente'" (click)="abrirPagina('negocios')">
+          <ion-icon name="home"></ion-icon>
+          Negocios
+        </button>
+        <button ion-item *ngIf="tipo == 'cliente'" (click)="abrirPagina('registro-cliente')">
+            <ion-icon name="home"></ion-icon>
+            Registrar Cliente
+        </button>
+        <button ion-item *ngIf="tipo == 'cliente'" (click)="abrirPagina('registro-negocio')">
+            <ion-icon name="home"></ion-icon>
+            Registrar Negocio
+        </button>
+        <button ion-item *ngIf="tipo == 'cliente'" (click)="abrirPagina('registro-pedido')">
+            <ion-icon name="home"></ion-icon>
+            Registrar Pedido
+        </button>
+        <button ion-item *ngIf="tipo == 'cliente'" (click)="abrirPagina('registro-producto')">
+            <ion-icon name="home"></ion-icon>
+            Registrar Producto
+        </button>
+       
+        
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  
+  <ion-nav id="nav" #content [root]="rootPage"></ion-nav>

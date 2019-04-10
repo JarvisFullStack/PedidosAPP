@@ -10,14 +10,14 @@ import { HomePage } from '../pages/home/home';
 //Paginas
 import {RegistroClientePage, RegistroNegocioPage, RegistroPedidoPage, RegistroProductoPage, 
 ListadoClientesPage, ListadoNegociosPage, ListadoPedidosPage, ListadoProductosPage, SeleccionInicioPage, 
-LoginPage} from '../pages/index.pages';
+LoginPage, MenuPrincipalPage} from '../pages/index.pages';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage, RegistroClientePage, RegistroNegocioPage, RegistroPedidoPage, RegistroProductoPage, 
     ListadoClientesPage, ListadoNegociosPage, ListadoPedidosPage, ListadoProductosPage, SeleccionInicioPage, 
-    LoginPage
+    LoginPage, MenuPrincipalPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +28,7 @@ LoginPage} from '../pages/index.pages';
     MyApp,
     HomePage, RegistroClientePage, RegistroNegocioPage, RegistroPedidoPage, RegistroProductoPage, 
     ListadoClientesPage, ListadoNegociosPage, ListadoPedidosPage, ListadoProductosPage, SeleccionInicioPage, 
-    LoginPage
+    LoginPage, MenuPrincipalPage
   ],
   providers: [
     StatusBar,

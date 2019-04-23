@@ -11,6 +11,8 @@ import { HomePage } from '../pages/home/home';
 import {RegistroClientePage, RegistroNegocioPage, RegistroPedidoPage, RegistroProductoPage, 
 ListadoClientesPage, ListadoNegociosPage, ListadoPedidosPage, ListadoProductosPage, SeleccionInicioPage, 
 LoginPage, MenuPrincipalPage} from '../pages/index.pages';
+import { ServicesNegocioProvider } from '../providers/services-negocio/services-negocio';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ LoginPage, MenuPrincipalPage} from '../pages/index.pages';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpClientModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -33,7 +36,8 @@ LoginPage, MenuPrincipalPage} from '../pages/index.pages';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ServicesNegocioProvider
   ]
 })
 export class AppModule {}

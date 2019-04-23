@@ -1,4 +1,3 @@
-import { Pedido_Cliente } from './../../models/pedido_cliente';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -15,7 +14,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'registro-pedido.html',
 })
 export class RegistroPedidoPage {
-  Pedido: Pedido_Cliente;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
